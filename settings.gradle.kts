@@ -1,1 +1,1 @@
-rootProject.name = "transl"
+rootProject.name = "TransBot"
