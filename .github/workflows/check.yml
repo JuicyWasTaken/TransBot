@@ -11,6 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - run: ./gradlew lib:build
+
       - name: Build the project
         run: ./gradlew jar
       
