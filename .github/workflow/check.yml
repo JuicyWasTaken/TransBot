@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+name: Debugging
+      run: |
+        pwd
+        ls -la
 
       - name: Build the project
         run: ./gradlew jar
