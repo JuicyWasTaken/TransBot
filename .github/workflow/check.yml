@@ -1,0 +1,27 @@
+name: Check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+
+      - name: Change working directory to project root
+        run: cd $GITHUB_WORKSPACE
+
+      - name: Build the project
+        run: ./gradlew jar
+      
+      - name: Run all automated tests
+        run: ./gradlew check
