@@ -1,7 +1,7 @@
 import io.github.cdimascio.dotenv.dotenv
 
 object Vault {
-    val discordBotToken = dotenv.get("TRANSBOT_DISCORD_BOT_TOKEN") ?: throw EnvError("TRANSBOT_DISCORD_BOT_TOKEN")
+    val discordBotToken = dotenv.get("5a80271c936b64572976f228e334ab66cbd9e227a8a3c44ab5a5e8e2cf57b83f") ?: throw EnvError("TRANSBOT_DISCORD_BOT_TOKEN")
 
     val deeplAuthKey = dotenv.get("TRANSBOT_DEEPL_AUTH_KEY") ?: throw EnvError("TRANSBOT_DEEPL_AUTH_KEY")
 
