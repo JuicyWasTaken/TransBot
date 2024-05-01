@@ -16,3 +16,6 @@ jobs:
       
       - name: Run all automated tests
         run: ./gradlew check
+
+      - name: Lint
+      - uses: vroy/gha-kotlin-linter@v4
