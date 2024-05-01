@@ -7,4 +7,4 @@ COPY src/ ./src/
 RUN gradle --no-daemon installDist
 
 COPY .env ./.env
-CMD ["build/install/transl/bin/transl"]
+CMD ["build/install/TransBot/bin/TransBot"]
